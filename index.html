@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <title>Fitness Jacky</title>
+
+
+    <link rel="stylesheet" href="index.css" class="css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+      <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="left">
+            <img src="bg1.jpg" alt="Fitness Jacky" class="image">
+            <div>Fitness Jacky</div>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="FitnessCalculator.html">Fitness Calculator</a></li>
+                <li><a href="ContactUS.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+
+    <!--
+       Forms Bar
+   -->
+
+    <form class="formargin">
+        <div class="form-row">
+            <div class="col-md-2 mb-1">
+                <label for="validationDefault01">First name</label>
+                <input type="text" class="form-control" id="validationDefault01"  required>
+            </div>
+            <div class="col-md-2 mb-1">
+                <label for="validationDefault02">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02"  required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-2 mb-1">
+                <label for="validationDefault03">City</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-2 mb-2">
+                <label for="validationDefault04">State</label>
+                <select class="custom-select" id="validationDefault04" required>
+                    <option selected disabled value="">State</option>
+                    option>Andhra Pradesh</option>
+                    <option>Arunanchal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Gujarat</option>
+                    <option>Punjab</option>
+                    <option>Goa</option>
+                    <option>Maharashta</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttrakhand</option>
+                    <option>Chandigarh</option>
+                    <option>Bihar</option>
+                    <option>Jharkhand</option>
+                    <option>Delhi</option>
+                    <option>Haryana</option>
+                    <option>Tamil Nadu</option>
+                    <option>Kerala</option>
+                    <option>Chattisgarh</option>
+                    <option>Jammu And Kashmir</option>
+                    <option>Karnataka</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Manipur</option>
+                    <option>Mehgalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>West Bengal</option>
+                    <option>Tripura</option>
+                </select>
+                <div class="form-group" class="mag">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" class="bttn" onclick="validateform()"><a href="Message.html">SUBMIT</a></button>
+    </form>
+
+
+
+    <!--
+          JavaScript Optional
+      -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

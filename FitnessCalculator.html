@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+    <title>Fitness Calculator</title>
+
+
+    <style type="text/css">
+        body {
+            font-family: 'Playfair Display', serif;
+            background-image: url("bg.jpg");
+            background-size: 1500px;
+        }
+
+
+        .align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="align" name="bmiForm">
+        <img src="bg1.jpg" alt="Fitness" width="180" height="180">
+        <pre>
+
+</pre>
+        <div>
+            <div>
+                <label for="Your Weight">Your Weight in (CM) :: </label>
+                <input type="text" name="weight" id="Your Weight" placeholder="Your Weight in (CM)">
+            </div>
+        </div>
+        <pre>
+</pre>
+        </pre>
+        <div>
+            <div>
+                <label for="Your Height">Your Height in (CM) :: </label>
+                <input type="text" name="height" placeholder="Your Height in (CM)" id="Your Height">
+            </div>
+        </div>
+        <pre>
+</pre>
+        <div>
+            <div>
+                <button type="button" class="btn btn-dark" value="Caculate BMI" onclick="calculateBmi()">Calculate
+                    BMI</button>
+            </div>
+        </div>
+        <pre>
+</pre>
+        <div>
+            <div>
+                <label for="Your BMI">Your BMI :: </label>
+                <input type="text" name="bmi" id="your Bmi" placeholder="BMI">
+            </div>
+        </div>
+        <pre></pre>
+        <div>
+            <div>
+                <label for="This Means">This Means :: </label>
+                <input type="text" name="meaning" id="This Means" placeholder="This Means">
+            </div>
+        </div>
+        <pre></pre>
+        <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+
+    <!--
+        JavaScript Code for Calculating BMI
+    -->
+    <script language="JavaScript">
+
+        function calculateBmi() {
+            var weight = document.bmiForm.weight.value
+            var height = document.bmiForm.height.value
+            if (weight > 0 && height > 0) {
+                var finalBmi = weight / (height / 100 * height / 100)
+                document.bmiForm.bmi.value = finalBmi
+                if (finalBmi < 18.5) {
+                    document.bmiForm.meaning.value = "That you are too thin."
+                }
+                if (finalBmi > 18.5 && finalBmi < 25) {
+                    document.bmiForm.meaning.value = "That you are healthy."
+                }
+                if (finalBmi > 25) {
+                    document.bmiForm.meaning.value = "That you have overweight."
+                }
+            }
+            else {
+                alert("Please Fill in everything correctly")
+            }
+        }
+    </script>
+
+    
+
+    <!--
+          JavaScript Optional
+      -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

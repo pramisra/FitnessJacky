@@ -1,0 +1,85 @@
+body{
+    font-family: 'Playfair Display', serif; 
+    margin: 0px;
+    padding: 0px;
+    background: url("bg.jpg");
+    background-size: 1500px;
+    height: 150px;
+}
+
+.left{
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    display: inline-block;
+   
+
+}
+
+.center{
+    width: 33%;
+    margin: 18px auto;
+    display: block;
+    
+
+}
+
+.right{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    display: inline-block;
+    
+
+}
+
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 18px;
+}
+.navbar li a{
+    color: crimson;
+    text-decoration: none;
+    padding: 7px;
+}
+
+
+ .navbar li a:hover, .navbar li a.active{
+     text-decoration: underline;
+     color: goldenrod;
+ }
+.left img{
+     width: 96px;
+ }
+ .left div{
+     text-align: center;
+     font-size: 19px;
+ }
+
+ .right button{
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 5px 19px;
+    background-color: blanchedalmond;
+    margin: 0px 9px ;
+    border: 2px grey solid;
+    border-radius: 86px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .btn:hover{
+     color: rgb(163, 24, 156);
+ }
+
+ .formargin{
+     margin-top: 15%;
+     margin-left: 10%;
+      color : black;
+ }
+
+
+a:hover{
+    color: red;
+}
